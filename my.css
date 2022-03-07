@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .ais-Hits-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.ais-Hits-item {
+  padding: 16px;
+} */
+/* @layer components {
+  .ais-Hits-list {
+    @apply
+    flex
+    flex-row
+    flex-wrap
+  }
+  
+} */
+
+/* @layer base {
+  ul {
+    @apply flex
+    flex-row
+    flex-wrap;
+  }
+  li {
+    @apply min-w-1/5 max-w-1/5 w-1/5;
+  }
+} */
+
+@layer base {
+  ul {
+    @apply grid
+    sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
+    gap-3;
+  }
+}
+
+/* body {
+  font-family: sans-serif;
+}
+
+.ais-SearchBox {
+  margin: 1em 0;
+}
+
+.ais-Pagination {
+  margin-top: 1em;
+}
+
+.ais-InstantSearch {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ais-InfiniteHits-item {
+  margin-bottom: 1em;
+  width: calc(50% - 1rem);
+}
+
+.ais-InfiniteHits-sentinel {
+  width: 100%;
+}
+
+.ais-InfiniteHits-item img {
+  margin-right: 1em;
+}
+
+.hit-name {
+  margin-bottom: 0.5em;
+}
+
+.hit-description {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+.ais-GeoSearch {
+  position: relative;
+}
+
+.ais-GeoSearch-map {
+  height: calc(100vh - 64px);
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+}
+
+.swiper-slide img {
+  width: auto;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+} */
+div.ais-RefinementList > ul {
+  display: block;
+}
+ul.MuiList-root {
+  display: block;
+}
+
+ul.ais-InfiniteHits-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid;
+}
+
+ul.ais-Hits-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid;
+}
+
+/**
+   * Hits
+   */
+.ais-Hits-item,
+.ais-InfiniteHits-item {
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  background: inherit;
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit;
+  display: inherit;
+  display: inherit;
+  display: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: inherit;
+}
+
+.ais-Hits-item:first-of-type,
+.ais-InfiniteHits-item:first-of-type {
+  border-radius: inherit;
+}
+
+.ais-Hits-item:last-of-type,
+.ais-InfiniteHits-item:last-of-type {
+  border-radius: inherit;
+}
+
+.ais-Hits-item:only-of-type,
+.ais-InfiniteHits-item:only-of-type {
+  border-radius: inherit;
+}
+
+/**
+   * Highlighting and Snippeting
+   */
+.ais-Highlight-highlighted,
+.ais-Snippet-highlighted {
+  background-color: yellow;
+  color: #000;
+  font-style: normal;
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+}
+.mapboxgl-popup-close-button {
+  padding-top: 4px !important;
+  padding-right: 8px !important;
+  font-size: 1.875rem !important;
+  line-height: 2.25rem !important;
+  font-weight: 900 !important;
+}
+
+/* .mapboxgl-popup-close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    border-radius: 0 3px 0 0;
+    cursor: pointer;
+    background-color: transparent;
+  } */
