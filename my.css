@@ -173,6 +173,25 @@ ul.ais-Hits-list {
   color: #000;
   font-style: normal;
 }
+.ais-HierarchicalMenu-count,
+.ais-Menu-count,
+.ais-RatingMenu-count,
+.ais-RefinementList-count,
+.ais-ToggleRefinement-count {
+  background: #f5f5fa none repeat scroll 0 0;
+  border: 1px solid #b6b7d5;
+  border-radius: 99999px;
+  color: #23263b;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+  overflow: hidden;
+  padding: 0 0.25rem;
+  margin: 0px 0px 0px auto;
+}
 
 .mapboxgl-popup-content {
   padding: 0 !important;
